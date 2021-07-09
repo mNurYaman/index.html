@@ -279,32 +279,63 @@
                 <input type="radio" name="cinsiyet" required value="Kadın"> Kadın
             </label> <br>
             <input type="hidden" name="test" value="kadın">
-            <input type="submit" value="Gönder">
+            <input type="submit" formaction="a.html" value="Gönder">
             <input type="reset" value="Sıfırla">
            
        </form>
 
        <br><br><br>
 
-       <input type="color"> <br>
-       <input type="date"> <br>
-       <input type="datetime-local"> <br>
-       <input type="email"> <br>
-       <input type="month"> <br>
-       <input type="week"> <br>
-       <input type="range" min="0" max="20" step="5"> <br>
-       <input type="search"> <br>
-       <input type="tel"> <br>
-       <input type="time"> <br>
-       <input type="url"> <br>
-       <input type="text" name="kaid" autocomplete="off"> <br>
-       <input list="diller">
+       <input type="color"> <br><br>
+       <input type="date"> <br><br>
+       <input type="datetime-local"> <br><br>
+       <input type="email"> <br><br>
+       <input type="month"> <br><br>
+       <input type="week"> <br><br>
+       <input type="range" min="0" max="20" step="5"> <br><br>
+       <input type="search"> <br><br>
+       <input type="tel"> <br><br>
+       <input type="time"> <br><br>
+       <input type="url"> <br><br>
+
+       <input type="text" name="kaid" autocomplete="off"> <br><br>
+
+       <input list="diller" name="diller" form="form1">
        <datalist id="diller">
            <option value="HTML">
            <option value="CSS">
            <option value="JavaScript">
         </datalist> <br><br>
 
+        <select name="dil">
+            <optgroup label="Front-end Dilleri">
+            <option value="css">CSS</option>
+            <option selected value="css">HTML</option>
+            <option value="css">JS</option>
+            </optgroup>
+            <optgroup label="Black-end Dilleri">
+                <option value="php">PHP</option>
+                <option selected value="js">JSS</option>
+                <option value="python">PYTHON</option>
+                </optgroup>
+        </select> <br><br>
+
+        <textarea name="" cols="30" rows="10"></textarea> <br><br>
+
+        <button type="submit">Gönder</button> <br><br>
+
+
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Giriş</legend>
+            <label for="kadi">Kullanıcı Adı</label>
+            <input required placeholder="name" required id="kadi" type="text" value=""> <br>
+            <label for="sifre">Şifre</label>
+            <input required placeholder="password" required maxlength="6" id="sifre" type="password"> <br>
+            <label for="eposta">E-Posta</label>
+            <input required placeholder="mail" required type="email" id="eposta"> <br>
+            <button type="submit">Giriş Yap</button>
+        </fieldset>
         
 
 
